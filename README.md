@@ -68,3 +68,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Docker 
+
+### Locally 
+
+
+`1. Build and tag the Docker image instance:
+`docker build -t foodapp:dev .` 
+
+
+2. Run it:
+   Use `docker compose up -f docker-compose.local.yaml` or command line:`
+
+OR simply: 
+`docker-compose -f docker-compose.local.yaml up -d --build`
+
+```sh
+docker run \
+    -it \
+    --rm \
+    -v ${PWD}:/app \
+    -v /app/node_modules \
+    -p 3001:3000 \
+    -e CHOKIDAR_USEPOLLING=true \
+    foodapp:dev
+```
+### prod
+1. Build it with a tag: 
+    `docker build -f Dockerfile -t foodapp .`
+2. Run: `docker run -it --rm -p 1234:80 foodapp`
+3. Docker compose for prod `docker-compose -f docker-compose.yaml up -d --build`
+
+
+Image will be pushed by github action as described [here](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images#publishing-images-to-github-packages)
+
+
+
+
+
+
+
