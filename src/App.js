@@ -1,6 +1,7 @@
 import "./App.css";
 import options, { people } from "./options";
 import React from "react";
+import { createBrowserHistory } from "history";
 
 const App = () => {
   const [activeTags, setActiveTags] = React.useState([]);
@@ -70,6 +71,16 @@ const App = () => {
     .filter(byPeoplesMusts)
     .filter(byActiveTags)
     .filter(outSpecificHoursAndDays);
+
+  // Persist in URL
+  // TODO: parse and read from url + maybe tinyID?
+  const history = createBrowserHistory();
+
+  React.useEffect(() => {
+    history.push(
+      `?t=${activeTags}?p=${selectedPeople.map((p) => p.name)}?f=${timeFilter}`
+    );
+  }, [history, activeTags, selectedPeople, timeFilter]);
 
   return (
     <div className="App">
