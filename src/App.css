@@ -1,8 +1,9 @@
 a {
   background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
   color: #000;
   text-decoration: none;
-  border: 1px solid #282c34;
 }
 
 a:hover {
@@ -10,23 +11,36 @@ a:hover {
   color: #fff;
 }
 
+button {
+  border-radius: 15px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .App {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000;
   color: white;
-  font-size: calc(11px + 0.5vmin);
+  font-size: calc(14px + 0.5vmin);
+  min-height: 100vh;
 }
 
 .active {
   background-color: #e00468;
+  font-weight: bold;
 }
 
 .card {
   background-color: white;
   color: #282c34;
   height: 100%;
-  width: 100%;
   padding: 15px;
+  width: 100%;
 }
 
 .cardTitle {
@@ -45,15 +59,22 @@ a:hover {
 }
 
 .suggestionCount {
-  background-color: #000;
-  width: fit-content;
   font-size: calc(10px + 2vmin);
   font-weight: bold;
   padding: 10px;
   width: 100%;
+  width: fit-content;
 }
 
 .tag {
-  padding: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  padding: 6px 10px;
+}
+
+@media (max-width: 767px) {
+  .tag {
+    font-size: 24px;
+    border-radius: 20px;
+  }
 }
