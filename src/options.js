@@ -62,7 +62,7 @@ const options = [
     menuLink: "https://www.choppaluna-berlin.de/#cat1",
   },
   {
-    name: "Selber kochen! (quick version)",
+    name: "Make it yourself!",
     tags: [
       "bier",
       "extra-quicky",
@@ -72,7 +72,7 @@ const options = [
       "very-cheap",
       "we-have-time",
     ],
-    hint: "Quick Version: Ideas >>  Pasta | Pizza from a freezer | Make a Sandwitch | Eat Apple | Drink Beer, i don't know. Long Version:Ask Agustin one day before. 5 Courses dish with Langustines, Tortilla and Spanish Wine. Hint: This won't be 2 min. ;-) ",
+    hint: "Quick Version: Ideas >>  Pasta | Pizza from a freezer | Make a Sandwitch | Eat Apple | Drink Beer, i don't know. Longer Version: Ask Agustin one day before. 5 Courses dish with Langustines, Tortilla and Spanish Wine. Hint: This won't be 2 min. ;-) ",
   },
   {
     name: "Datscha",
