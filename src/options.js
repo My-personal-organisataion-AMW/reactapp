@@ -37,7 +37,7 @@ const options = [
   },
   {
     name: "Charlotte 1",
-    tags: ["pizza", "very-cheap", "new-places"],
+    tags: ["pizza", "very-cheap", "new-places", "no-sitting"],
     hint: "no sitting places! cheap pizza",
     mapLink: `${startPoint}LCharlotte+1,+Charlottenstraße+1,+10969+Berlin/@52.5065598,13.390505,17z/data=!3m2!4b1!5s0x47a85191d67efc55:0x45cff7b5ae0f3c02!4m14!4m13!1m5!1m1!1s0x47a851d14a7c756f:0xc8695c302425726e!2m2!1d13.3923017!2d52.5078243!1m5!1m1!1s0x47a851d415b6771b:0xf18afe0a148141c7!2m2!1d13.3930857!2d52.5052963!3e2`,
   },
@@ -62,21 +62,17 @@ const options = [
     menuLink: "https://www.choppaluna-berlin.de/#cat1",
   },
   {
-    name: "Cook Yourself (quick version)",
+    name: "Selber kochen! (quick version)",
     tags: [
-      "pizza",
-      "extra-quicky",
-      "very-cheap",
-      "vegan-friendly",
-      "sandwich",
       "bier",
+      "extra-quicky",
+      "pizza",
+      "sandwich",
+      "vegan-friendly",
+      "very-cheap",
+      "we-have-time",
     ],
-    hint: "Ideas >>  Pasta | Pizza from a freezer | Make a Sandwitch | Eat Apple | Drink Beer",
-  },
-  {
-    name: "Cook Yourself (5 Courses)",
-    tags: ["we-have-time", "bier"],
-    hint: "Ask Agustin one day before. 5 Courses dish with Langustines, Tortilla and Spanish Wine. Hint: This won't be 2 min. ;-)",
+    hint: "Quick Version: Ideas >>  Pasta | Pizza from a freezer | Make a Sandwitch | Eat Apple | Drink Beer, i don't know. Long Version:Ask Agustin one day before. 5 Courses dish with Langustines, Tortilla and Spanish Wine. Hint: This won't be 2 min. ;-) ",
   },
   {
     name: "Datscha",
@@ -199,14 +195,14 @@ const options = [
   },
   {
     name: "Q-burger",
-    tags: ["burger", "vegan-friendly"],
+    tags: ["burger", "vegan-friendly", "bier"],
     hint: "variety of vegan and vegetarian burgers!",
     mapLink: `${startPoint}Q+Burger,+Zimmerstra%C3%9Fe,+Berlin/@52.5081438,13.3949856,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d6c5ddbeb9:0x2de3116e00ae6f6a!2m2!1d13.3939132!2d52.5081566!3e2`,
     menuLink: "https://www.qburgerberlin.de/#cat2",
   },
   {
     name: "Yusuf - Falafel, Halloumi & Schawarma",
-    tags: ["new-places"],
+    tags: ["new-places", "no-sitting"],
     hint: "We do not know anyone who came back alive. Please go and let us know.",
     mapLink: `${startPoint}Yusuf+-+Falafel,+Halloumi+%26+Schawarma,+Axel-Springer-Stra%C3%9Fe+43,+10969+Berlin/@52.5077217,13.3976897,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a8514a9b92f611:0x5775be34c2f1e23d!2m2!1d13.3993956!2d52.50812!3e2`,
   },
@@ -254,6 +250,7 @@ export const people = [
   },
   {
     name: "Axel",
+    noGoTags: ["no-sitting"],
   },
   {
     name: "Guenther",
