@@ -72,6 +72,9 @@ const App = () => {
     .filter(byActiveTags)
     .filter(outSpecificHoursAndDays);
 
+  const isTagUnactive = (tag) => getAll("noGoTags").includes(tag);
+  const isTagAMust = (tag) => getAll("mustTags").includes(tag);
+
   // Persist in URL
   // TODO: parse and read from url + maybe tinyID?
   const history = createBrowserHistory();
@@ -108,15 +111,24 @@ const App = () => {
       <div className="flexContainer gap">
         {existingTags.map((tag) => (
           <span
-            className={activeTags.includes(tag) ? "tag active" : "tag"}
+            className={
+              isTagUnactive(tag)
+                ? "tag disabled"
+                : isTagAMust(tag)
+                ? "tag active"
+                : activeTags.includes(tag)
+                ? "tag active"
+                : "tag"
+            }
             key={tag}
-            onClick={() =>
-              setActiveTags(
+            onClick={() => {
+              if (isTagUnactive(tag)) return;
+              return setActiveTags(
                 activeTags.includes(tag)
                   ? activeTags.filter((e) => e !== tag)
                   : [...activeTags, tag]
-              )
-            }
+              );
+            }}
           >
             {tag}
           </span>

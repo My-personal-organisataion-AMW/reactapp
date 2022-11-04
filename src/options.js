@@ -49,14 +49,14 @@ const options = [
   },
   {
     name: "Chuppenga Burritos",
-    tags: ["vegan-friendly"],
+    tags: ["vegan-friendly", "wrap"],
     mapLink: `${startPoint}Chupenga+Burritos+%26+Salads,+Charlottenstra%C3%9Fe+4,+10969+Berlin/@52.5073626,13.3934922,17z/data=!3m2!4b1!5s0x47a851d6a6d50e25:0xc44b4099f69e892d!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d6a3ffb2e7:0x76b522c48c123569!2m2!1d13.392965!2d52.506432!3e2`,
     menuLink:
       "https://res.cloudinary.com/www-chupenga-de/images/v1652010239/wordpress_assets_chupenga/Chupenga_Menu_Mai-2022_allstores_PRINT/Chupenga_Menu_Mai-2022_allstores_PRINT.jpg?_i=AA",
   },
   {
     name: "Choppaluna",
-    tags: ["asian"],
+    tags: ["asian", "bowl", "wrap"],
     hint: "very bad idea: extremly loud and stressfull",
     mapLink: `${startPoint}Choppaluna,+Rudi-Dutschke-Stra%C3%9Fe,+Berlin/@52.5075038,13.3934922,17z/data=!3m2!4b1!5s0x47a851d6a6d50e25:0xc44b4099f69e892d!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a8511b4039af17:0xea6bd994340038f4!2m2!1d13.3934226!2d52.5067144!3e2`,
     menuLink: "https://www.choppaluna-berlin.de/#cat1",
@@ -129,7 +129,7 @@ const options = [
   },
   {
     name: "Kumpir Club",
-    tags: ["potato", "new-places"],
+    tags: ["potato", "new-places", "bowl"],
     mapLink: `${startPoint}KUMPIR+CLUB+fresh+food+%26+coffee,+Kommandantenstra%C3%9Fe+71,+10117+Berlin/@52.5078992,13.3991502,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84f5973813ad9:0xc6acc78364d8f7a4!2m2!1d13.4035547!2d52.5085124!3e2`,
   },
   {
@@ -158,8 +158,8 @@ const options = [
     mapLink: `${startPoint}PAPA+by+Pace,+Zimmerstra%C3%9Fe,+Berlin/@52.508064,13.3950051,17z/data=!3m2!4b1!5s0x47a851d6a6d50e25:0xc44b4099f69e892d!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d69a1a5e19:0x9f2458790cdfeb50!2m2!1d13.3961756!2d52.5078348!3e2`,
   },
   {
-    name: "Poke bowl",
-    tags: ["asian", "vegan-friendly"],
+    name: "Poke bowl (Maloa)",
+    tags: ["asian", "vegan-friendly", "bowl"],
     hint: "only cold food!",
     mapLink: `${startPoint}MALOA+Poke+Bowl,+Zimmerstra%C3%9Fe,+Berlin/@52.5081302,13.3937242,17z/data=!3m2!4b1!5s0x47a851d6a6d50e25:0xc44b4099f69e892d!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a8510601873af5:0x1f278d1adde45d25!2m2!1d13.3935791!2d52.5080523!3e2`,
   },
