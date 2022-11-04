@@ -9,7 +9,7 @@ const options = [
   },
   {
     name: "Blumen laden viet",
-    tags: ["asian", "vegan-friendly", "soup"],
+    tags: ["asian", "vegan-friendly", "soup", "fish"],
     mapLink: `${startPoint}Haicoffee+%26+Asianfood,+Wallstra%C3%9Fe+2,+10179+Berlin/@52.509822,13.3985832,17z/data=!3m2!4b1!5s0x47a84e27e2389f8b:0xecfdd5de1cee09c4!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84faca54e547b:0x9e7692981f88f88a!2m2!1d13.4033187!2d52.5112!3e2`,
   },
   {
@@ -28,7 +28,7 @@ const options = [
   },
   {
     name: "Canteen & Diner (Axel Springer)",
-    tags: ["very-cheap", "vegan-friendly", "extra-quicky"],
+    tags: ["very-cheap", "vegan-friendly", "extra-quicky", "fish"],
     hint: "Paparazzi | Mon-Fri: 11:30 a.m. - 3 p.m.",
     menuLink: `https://confluence.eu.idealo.com/pages/viewpage.action?pageId=225330284`,
     timeBasedFilter: {
@@ -76,7 +76,7 @@ const options = [
   },
   {
     name: "Datscha",
-    tags: ["we-have-time", "vegan-friendly", "bier"],
+    tags: ["we-have-time", "vegan-friendly", "bier", "fish"],
     mapLink: `${startPoint}Graefestra%C3%9Fe+83,+10967+Berlin/@52.501048,13.3977532,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fcbc0045e91:0xe7fd7b7b24d05b31!2m2!1d13.4187578!2d52.4939387!3e1`,
     menuLink: "https://datscha.de/speisekarte.html",
   },
@@ -112,18 +112,18 @@ const options = [
   },
   {
     name: "Maximilian",
-    tags: ["we-have-time", "bier"],
+    tags: ["we-have-time", "bier", "fish"],
     menuLink: "https://www.maximilians-berlin.de/mittagstisch",
   },
   {
     name: "Ishin",
-    tags: ["asian", "japanese", "bier"],
+    tags: ["asian", "japanese", "bier", "fish", "sushi"],
     mapLink: `${startPoint}Ishin,+Charlottenstra%C3%9Fe+16,+10117+Berlin/@52.5080195,13.3942365,18z/data=!3m2!4b1!5s0x47a851d133885a7d:0xcb6b0bd710d1b22!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d13503c889:0x400e7ce504d574b9!2m2!1d13.3924932!2d52.5081615!3e2`,
     menuLink: "https://ishin.de/speisekarte",
   },
   {
     name: "Izumi",
-    tags: ["asian", "japanese", "we-have-time", "new-places"],
+    tags: ["asian", "japanese", "we-have-time", "new-places", "fish", "sushi"],
     mapLink: `${startPoint}Izumi+Restaurant-Sushi+Bar+%26+Lieferservice,+Kronenstra%C3%9Fe+66,+10117+Berlin/@52.509587,13.3912776,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d06bc40143:0x8b763c3653d8fda7!2m2!1d13.3886859!2d52.5112976!3e2`,
     menuLink: "https://www.sushi-izumi.de/index.php?page=angebote",
   },
@@ -179,7 +179,7 @@ const options = [
   },
   {
     name: "Taka Fish House | Kotti",
-    tags: ["we-have-time"],
+    tags: ["we-have-time", "fish"],
     mapLink: `${startPoint}TAKA+Fisch+House,+Adalbertstra%C3%9Fe+97,+10999+Berlin/@52.5044983,13.3992997,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84e336cde3b7d:0xf799ba168b2cccef!2m2!1d13.4179115!2d52.4999783!3e1`,
   },
   {
