@@ -1,10 +1,19 @@
 import "./App.css";
 import options, { people } from "./options";
 import React from "react";
+import { parse, stringify } from "qs";
 import { createBrowserHistory } from "history";
 
 const App = () => {
-  const [activeTags, setActiveTags] = React.useState([]);
+  // from URL
+  const { namesInit, tagsInit } = parse(
+    new URL(document.location).hash.substring(1)
+  );
+  const peopleInit = people.filter((person) =>
+    namesInit?.includes(person.name)
+  );
+
+  const [activeTags, setActiveTags] = React.useState(tagsInit || []);
   const [timeFilter, setTimeFilter] = React.useState(true);
 
   // By tags
@@ -40,7 +49,7 @@ const App = () => {
     options.length - options.filter(outSpecificHoursAndDays).length;
 
   // By selected people's preferences
-  const [selectedPeople, setSelectedPeople] = React.useState([]);
+  const [selectedPeople, setSelectedPeople] = React.useState(peopleInit || []);
 
   const getAll = (type) => [
     ...new Set(
@@ -79,11 +88,15 @@ const App = () => {
   // TODO: parse and read from url + maybe tinyID?
   const history = createBrowserHistory();
 
+  const names = selectedPeople.map((person) => person.name);
+  const stringiedObject = stringify({
+    namesInit: names,
+    tagsInit: activeTags,
+  });
+
   React.useEffect(() => {
-    history.push(
-      `?t=${activeTags}&p=${selectedPeople.map((p) => p.name)}&f=${timeFilter}`
-    );
-  }, [history, activeTags, selectedPeople, timeFilter]);
+    history.push(`#${stringiedObject}`);
+  }, [history, stringiedObject]);
 
   return (
     <div className="App">
