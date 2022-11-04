@@ -81,7 +81,7 @@ const App = () => {
 
   React.useEffect(() => {
     history.push(
-      `?t=${activeTags}?p=${selectedPeople.map((p) => p.name)}?f=${timeFilter}`
+      `?t=${activeTags}&p=${selectedPeople.map((p) => p.name)}&f=${timeFilter}`
     );
   }, [history, activeTags, selectedPeople, timeFilter]);
 
