@@ -4,6 +4,9 @@ a {
   border: 1px solid #000;
   color: #000;
   text-decoration: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin: 0px 15px 0px 0px;
 }
 
 a:hover {
@@ -11,14 +14,14 @@ a:hover {
   color: #fff;
 }
 
-button {
+.button {
   border-radius: 15px;
   border: 1px solid #fff;
   cursor: pointer;
   padding: 6px 10px;
 }
 
-button:hover {
+.button:hover {
   background-color: #fff;
   color: #000;
 }
@@ -54,6 +57,7 @@ button:hover {
 }
 
 .flexContainer {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   padding: 5px 0px;

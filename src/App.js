@@ -105,7 +105,9 @@ const App = () => {
             </span>
           );
         })}
-        <button onClick={() => setSelectedPeople([])}>reset</button>
+        <div className="button" onClick={() => setSelectedPeople([])}>
+          reset
+        </div>
       </div>
       <hr></hr>
       <div className="flexContainer gap">
@@ -133,7 +135,9 @@ const App = () => {
             {tag}
           </span>
         ))}
-        <button onClick={() => setActiveTags([])}>reset tags</button>
+        <div className="button" onClick={() => setActiveTags([])}>
+          reset tags
+        </div>
       </div>
       <div className="flexContainer gap">
         <div className="suggestionCount">
@@ -155,13 +159,7 @@ const App = () => {
                 const [label, href] = entry;
                 return (
                   href && (
-                    <a
-                      className="tag"
-                      href={href}
-                      key={href}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href={href} key={href} target="_blank" rel="noreferrer">
                       {label}
                     </a>
                   )
@@ -176,10 +174,10 @@ const App = () => {
         <>
           <div className="flexContainer gap">
             We dont't show {hiddenOptionsCount} places that are currently closed
-            or overfulled.
-            <button onClick={() => setTimeFilter(!timeFilter)}>
-              Include those places.
-            </button>
+            or overfulled
+            <span className="button" onClick={() => setTimeFilter(!timeFilter)}>
+              Include those places
+            </span>
           </div>
         </>
       )}
