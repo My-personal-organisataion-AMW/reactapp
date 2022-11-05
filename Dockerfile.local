@@ -13,7 +13,7 @@ RUN npm install
 # add app
 COPY . ./
 
-# starts app on port 3000
+# starts app on port 4000
 CMD ["npm", "start"] // for prod, we want to build not start
 
 

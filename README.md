@@ -1,12 +1,16 @@
 # Docker
 
-## Locally
+## Docker Compose
 
-CLI:
-`docker build -f Dockerfile.local -t foodapp:dev .`
+1. `docker-compose -f docker-compose.yaml up -d --build` for production build
+2. `docker-compose -f docker-compose.local.yaml up -d --build` for production build
 
-DOCKER COMPOSE:
-`docker-compose -f docker-compose.local.yaml up -d --build`
+## Learning docker (notes)
+
+### CLI (local)
+
+- build: `docker build -f Dockerfile.local -t foodapp:dev .`
+- run: `docker run -it --rm -p 4000:80 foodapp`
 
 Above corrosponds with:
 
@@ -16,19 +20,15 @@ docker run \
     --rm \
     -v ${PWD}:/app \
     -v /app/node_modules \
-    -p 3000:3000 \
+    -p 4000:3000 \
     -e CHOKIDAR_USEPOLLING=true \
     foodapp:dev
 ```
 
-## production build
+### CLI (prod)
 
-CLI
-`docker build -f Dockerfile -t foodapp .`
-`docker run -it --rm -p 1234:80 foodapp`
-
-DOCKER COMPOSE
-`docker-compose -f docker-compose.yaml up -d --build`
+- build: `docker build -f Dockerfile -t foodapp .`
+- run: `docker run -it --rm -p 4000:80 foodapp`
 
 ### Push Image
 
@@ -45,12 +45,9 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:4000](http://localhost:3000) to view it in your browser.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Changed in `package.json` `"start": "PORT=4000 react-scripts start"`
 
 ### `npm run build`
 
