@@ -1,12 +1,11 @@
 import React from "react";
-import Nav from "./Nav";
+import Layout from "./Layout";
 
 const Preferences = () => {
   return (
-    <>
-      <h2>Preferences</h2>;
-      <Nav />
-    </>
+    <Layout>
+      <h2>Preferences</h2>
+    </Layout>
   );
 };
 

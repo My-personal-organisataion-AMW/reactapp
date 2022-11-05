@@ -1,10 +1,10 @@
 import React from "react";
 import movies from "./optionsMovies";
-import Nav from "./Nav";
+import Layout from "./Layout";
 
 const Movies = () => {
   return (
-    <>
+    <Layout>
       <h2>Movies</h2>
       <table id="movies">
         <tr>
@@ -18,8 +18,7 @@ const Movies = () => {
           </tr>
         ))}
       </table>
-      <Nav />
-    </>
+    </Layout>
   );
 };
 

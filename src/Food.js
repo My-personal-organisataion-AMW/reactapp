@@ -159,6 +159,11 @@ const Food = () => {
         </div>
         {filteredOptions.map((option) => (
           <div className="card" key={option.name}>
+            <div className="cardTagContainer">
+              {option?.tags.map((tag) => (
+                <span className="cardTag">{tag}</span>
+              ))}
+            </div>
             <div className="cardTitle" key={option.name}>
               {option.name}
             </div>
@@ -180,19 +185,21 @@ const Food = () => {
             </div>
           </div>
         ))}
+        {!!hiddenOptionsCount && (
+          <>
+            <div className="flexContainer gap card">
+              We dont't show {hiddenOptionsCount} places that are currently
+              closed or overfulled
+              <span
+                className="button"
+                onClick={() => setTimeFilter(!timeFilter)}
+              >
+                Include those places
+              </span>
+            </div>
+          </>
+        )}
       </div>
-      <hr></hr>
-      {!!hiddenOptionsCount && (
-        <>
-          <div className="flexContainer gap">
-            We dont't show {hiddenOptionsCount} places that are currently closed
-            or overfulled
-            <span className="button" onClick={() => setTimeFilter(!timeFilter)}>
-              Include those places
-            </span>
-          </div>
-        </>
-      )}
     </div>
   );
 };

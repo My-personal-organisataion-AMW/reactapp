@@ -1,11 +1,10 @@
 import Food from "./Food";
-import Nav from "./Nav";
+import Layout from "./Layout";
 
 export default function App() {
   return (
-    <>
+    <Layout>
       <Food />
-      <Nav />
-    </>
+    </Layout>
   );
 }

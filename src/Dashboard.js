@@ -1,12 +1,11 @@
 import React from "react";
-import Nav from "./Nav";
+import Layout from "./Layout";
 
 const Dashboard = () => {
   return (
-    <>
+    <Layout>
       <h2>Dashboard</h2>
-      <Nav />
-    </>
+    </Layout>
   );
 };
 

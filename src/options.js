@@ -62,7 +62,7 @@ const options = [
     menuLink: "https://www.choppaluna-berlin.de/#cat1",
   },
   {
-    name: "Make it yourself!",
+    name: "DIY",
     tags: [
       "bier",
       "extra-quicky",
@@ -72,11 +72,11 @@ const options = [
       "very-cheap",
       "we-have-time",
     ],
-    hint: "Quick Version: Ideas >>  Pasta | Pizza from a freezer | Make a Sandwitch | Eat Apple | Drink Beer, i don't know. Longer Version: Ask Agustin one day before. 5 Courses dish with Langustines, Tortilla and Spanish Wine. Hint: This won't be 2 min. ;-) ",
+    hint: "Staying in the office is an option too! Pasta | Pizza from a freezer | Bread w/ stuff | Veggies | Eat Apples | Beer | Wine | Whiskey | Be creative!",
   },
   {
     name: "Datscha",
-    tags: ["we-have-time", "vegan-friendly", "bier", "fish"],
+    tags: ["we-have-time", "vegan-friendly", "bier", "fish", "by-bike"],
     mapLink: `${startPoint}Graefestra%C3%9Fe+83,+10967+Berlin/@52.501048,13.3977532,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fcbc0045e91:0xe7fd7b7b24d05b31!2m2!1d13.4187578!2d52.4939387!3e1`,
     menuLink: "https://datscha.de/speisekarte.html",
   },
@@ -113,6 +113,7 @@ const options = [
   {
     name: "Maximilian",
     tags: ["we-have-time", "bier", "fish"],
+    mapLink: `${startPoint}Datscha+Kreuzberg,+Graefestra%C3%9Fe,+Berlin/@52.501039,13.3999211,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fcbc0045e91:0xe7fd7b7b24d05b31!2m2!1d13.4187578!2d52.4939387!3e2`,
     menuLink: "https://www.maximilians-berlin.de/mittagstisch",
   },
   {
@@ -238,6 +239,7 @@ export const people = [
   {
     name: "Robert",
     mustTags: ["vegan-friendly"],
+    noGoTags: ["by-bike"],
     noGoPlaces: ["Spaetzle"],
   },
   {
