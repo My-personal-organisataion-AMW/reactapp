@@ -98,7 +98,7 @@ const Food = () => {
   }, [history, stringiedObject]);
 
   return (
-    <div className="App">
+    <div className="Food">
       <div className="flexContainer gap">
         {people.map((person) => {
           return (

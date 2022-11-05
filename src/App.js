@@ -1,9 +1,11 @@
-import "./App.css";
 import Food from "./Food";
-import React from "react";
+import Nav from "./Nav";
 
-const App = () => {
-  return <Food />;
-};
-
-export default App;
+export default function App() {
+  return (
+    <>
+      <Food />
+      <Nav />
+    </>
+  );
+}
