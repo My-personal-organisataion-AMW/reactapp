@@ -7,16 +7,20 @@ const Movies = () => {
     <Layout>
       <h2>Movies</h2>
       <table id="movies">
-        <tr>
-          <th>Movie</th>
-          <th>Description</th>
-        </tr>
-        {movies.map(({ description, title }) => (
+        <tbody>
           <tr>
-            <td>{title}</td>
-            <td>{description}</td>
+            <th>No</th>
+            <th>Movie</th>
+            <th>Description</th>
           </tr>
-        ))}
+          {movies.map(({ description, title }, i) => (
+            <tr key={i}>
+              <td>{i + 1}</td>
+              <td>{title}</td>
+              <td>{description}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </Layout>
   );

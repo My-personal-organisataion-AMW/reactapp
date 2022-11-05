@@ -50,7 +50,6 @@ a:hover {
 }
 
 .cardTagContainer:hover {
-  /* height: 32px; */
   color: #e00468;
   font-size: smaller;
 }

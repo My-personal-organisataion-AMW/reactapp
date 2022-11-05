@@ -1,13 +1,12 @@
-import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Movies from "./Movies";
 import Dashboard from "./Dashboard";
 import "./index.css";
 import Preferences from "./Preferences";
+import { createRoot } from "react-dom/client";
 
-const rootElement = document.getElementById("root");
-render(
+createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
@@ -15,6 +14,5 @@ render(
       <Route path="movies" element={<Movies />} />
       <Route path="preferences" element={<Preferences />} />
     </Routes>
-  </BrowserRouter>,
-  rootElement
+  </BrowserRouter>
 );

@@ -74,6 +74,7 @@ const Food = () => {
   const byPeoplesMusts = (option) =>
     getAll("mustTags").every((t) => option.tags.includes(t));
 
+  // Apply all filters
   const filteredOptions = options
     .filter(byPeoplesNoGoPlaces)
     .filter(byPeoplesNoGoTags)
@@ -81,7 +82,7 @@ const Food = () => {
     .filter(byActiveTags)
     .filter(outSpecificHoursAndDays);
 
-  const isTagUnactive = (tag) => getAll("noGoTags").includes(tag);
+  const isTagDisabled = (tag) => getAll("noGoTags").includes(tag);
   const isTagAMust = (tag) => getAll("mustTags").includes(tag);
 
   // Persist in URL
@@ -126,7 +127,7 @@ const Food = () => {
         {existingTags.map((tag) => (
           <span
             className={
-              isTagUnactive(tag)
+              isTagDisabled(tag)
                 ? "tag disabled"
                 : isTagAMust(tag)
                 ? "tag active"
@@ -136,7 +137,7 @@ const Food = () => {
             }
             key={tag}
             onClick={() => {
-              if (isTagUnactive(tag)) return;
+              if (isTagDisabled(tag)) return;
               return setActiveTags(
                 activeTags.includes(tag)
                   ? activeTags.filter((e) => e !== tag)
@@ -167,6 +168,7 @@ const Food = () => {
             <div className="cardTitle" key={option.name}>
               {option.name}
             </div>
+
             <div>{option?.hint}</div>
             <div className="flexContainer">
               {Object.entries({
@@ -182,6 +184,7 @@ const Food = () => {
                   )
                 );
               })}
+              {/* {option.tags.includes("new-places") && <span>new place!</span>} */}
             </div>
           </div>
         ))}
