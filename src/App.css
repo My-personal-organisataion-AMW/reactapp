@@ -1,6 +1,6 @@
 a {
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 100px;
   border: 1px solid #000;
   color: #000;
   text-decoration: none;
@@ -16,7 +16,7 @@ a:hover {
 
 .button {
   background-color: #e2e2e2;
-  border-radius: 15px;
+  border-radius: 100px;
   color: #3f3f3f;
   cursor: pointer;
   padding: 6px 10px;
@@ -31,7 +31,7 @@ a:hover {
 .card {
   background-color: #fff;
   color: #282c34;
-  height: 100%;
+  flex-wrap: wrap;
   padding: 15px;
   width: 100%;
 }
@@ -42,22 +42,21 @@ a:hover {
 }
 
 .cardTagContainer {
-  height: 20px;
+  align-content: center;
   background-color: #fff;
   color: #fff;
   display: flex;
-  align-content: center;
+  flex-wrap: wrap;
+  font-size: smaller;
+  height: 20px;
 }
 
 .cardTagContainer:hover {
   color: #e00468;
-  font-size: smaller;
 }
 
 .cardTag {
-  border-radius: 15px;
-  padding: 6px 10px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .disabled {
@@ -82,16 +81,38 @@ a:hover {
   gap: 5px;
 }
 
-.suggestionCount {
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
+.randomContainer {
+  background-color: #e00468;
   padding: 10px;
   width: 100%;
-  width: fit-content;
+  display: flex;
+}
+
+.fade {
+  animation: 0.8s ease-in-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.suggestionCount {
+  background: #fff;
+  color: #000;
+  font-size: calc(20px + 2vmin);
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  transform: rotate(-2deg);
 }
 
 .tag {
-  border-radius: 15px;
+  border-radius: 100px;
   cursor: pointer;
   padding: 6px 10px;
 }
@@ -108,7 +129,11 @@ a:hover {
 @media (max-width: 767px) {
   .tag {
     font-size: 24px;
-    border-radius: 20px;
+    border-radius: 100px;
+  }
+
+  .suggestionCount {
+    font-size: calc(24px + 2vmin);
   }
 }
 
