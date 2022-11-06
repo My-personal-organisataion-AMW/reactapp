@@ -31,7 +31,7 @@ a:hover {
 .card {
   background-color: #fff;
   color: #282c34;
-  height: 100%;
+  flex-wrap: wrap;
   padding: 15px;
   width: 100%;
 }
@@ -42,22 +42,22 @@ a:hover {
 }
 
 .cardTagContainer {
-  height: 20px;
+  align-content: center;
   background-color: #fff;
   color: #fff;
   display: flex;
-  align-content: center;
+  flex-wrap: wrap;
+  font-size: smaller;
+  height: 20px;
 }
 
 .cardTagContainer:hover {
   color: #e00468;
-  font-size: smaller;
 }
 
 .cardTag {
   border-radius: 15px;
-  padding: 6px 10px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .disabled {
@@ -82,12 +82,21 @@ a:hover {
   gap: 5px;
 }
 
-.suggestionCount {
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
+.randomContainer {
+  background-color: #e00468;
   padding: 10px;
   width: 100%;
-  width: fit-content;
+  display: flex;
+}
+
+.suggestionCount {
+  background: #fff;
+  color: #000;
+  font-size: calc(20px + 2vmin);
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  transform: rotate(-2deg);
 }
 
 .tag {
@@ -109,6 +118,10 @@ a:hover {
   .tag {
     font-size: 24px;
     border-radius: 20px;
+  }
+
+  .suggestionCount {
+    font-size: calc(24px + 2vmin);
   }
 }
 

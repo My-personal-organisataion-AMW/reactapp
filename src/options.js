@@ -325,7 +325,6 @@ const options = [
     name: "Taka Fish House | Kotti",
     tags: [
       "has-sitting-places",
-      "reachable-without-a-bike",
       "we-have-time",
       "fish",
     ],

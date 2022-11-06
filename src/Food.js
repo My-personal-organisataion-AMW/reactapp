@@ -3,6 +3,8 @@ import options, { people } from "./options";
 import React from "react";
 import { parse, stringify } from "qs";
 import { createBrowserHistory } from "history";
+import { getRandomElementOf } from "./utils";
+import Card from "./Card";
 
 const Food = () => {
   // from URL
@@ -159,48 +161,29 @@ const Food = () => {
           {filteredOptions.length === 0 && " - You made it too complicated!"}
         </div>
         {filteredOptions.map((option) => (
-          <div className="card" key={option.name}>
-            <div className="cardTagContainer">
-              {option?.tags.map((tag) => (
-                <span className="cardTag">{tag}</span>
-              ))}
-            </div>
-            <div className="cardTitle" key={option.name}>
-              {option.name}
-            </div>
-
-            <div>{option?.hint}</div>
-            <div className="flexContainer">
-              {Object.entries({
-                map: option?.mapLink,
-                menu: option?.menuLink,
-              }).map((entry) => {
-                const [label, href] = entry;
-                return (
-                  href && (
-                    <a href={href} key={href} target="_blank" rel="noreferrer">
-                      {label}
-                    </a>
-                  )
-                );
-              })}
-              {/* {option.tags.includes("new-places") && <span>new place!</span>} */}
-            </div>
-          </div>
+          <Card key={option.name} option={option} />
         ))}
+        <div
+          className="randomContainer"
+          title="Feeling lukcy chooses for you. Like so: getRandomElementOf(filteredOptions) || getRandomElementOf(options)."
+        >
+          <h1>Feeling lucky</h1>
+          <Card
+            className="random"
+            option={
+              getRandomElementOf(filteredOptions) ||
+              getRandomElementOf(options.filter(outSpecificHoursAndDays))
+            }
+          />
+        </div>
         {!!hiddenOptionsCount && (
-          <>
-            <div className="flexContainer gap card">
-              We dont't show {hiddenOptionsCount} places that are currently
-              closed or overfulled
-              <span
-                className="button"
-                onClick={() => setTimeFilter(!timeFilter)}
-              >
-                Include those places
-              </span>
-            </div>
-          </>
+          <div className="flexContainer gap card">
+            We dont't show {hiddenOptionsCount} places that are currently closed
+            or overfulled
+            <span className="button" onClick={() => setTimeFilter(!timeFilter)}>
+              Include those places
+            </span>
+          </div>
         )}
       </div>
     </div>
