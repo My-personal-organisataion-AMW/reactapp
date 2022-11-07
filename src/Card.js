@@ -1,9 +1,10 @@
 import New from "./new.svg";
 import React from "react";
+import Close from "./close.svg";
 
-const Card = ({ option }) => {
+const Card = ({ option, onClose }) => {
   return (
-    <div className={"card "} key={option.name}>
+    <div className="card" key={option.name}>
       {
         <div className="cardTagContainer">
           {option?.tags.map((tag) => (
@@ -13,6 +14,14 @@ const Card = ({ option }) => {
           ))}
         </div>
       }
+      {onClose && (
+        <img
+          alt="close"
+          onClick={onClose}
+          src={Close}
+          style={{ float: "right", padding: "10px", cursor: "pointer" }}
+        />
+      )}
       <div className="cardTitle" key={option.name}>
         {option.name}
       </div>

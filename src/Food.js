@@ -5,6 +5,7 @@ import { parse, stringify } from "qs";
 import { createBrowserHistory } from "history";
 import { getRandomElementOf } from "./utils";
 import Card from "./Card";
+import lucky from "./lucky.png";
 
 const Food = () => {
   // from URL
@@ -100,12 +101,9 @@ const Food = () => {
     history.push(`#${stringiedObject}`);
   }, [history, stringiedObject]);
 
+  // feeling lucky aka. random
   const [randomVisible, setRandomVisible] = React.useState(false);
   const [fade, setFade] = React.useState(false);
-
-  const getRandomOption = () =>
-    getRandomElementOf(filteredOptions) ||
-    getRandomElementOf(options.filter(outSpecificHoursAndDays));
 
   return (
     <div className="Food">
@@ -166,27 +164,42 @@ const Food = () => {
           {filteredOptions.length}{" "}
           {filteredOptions.length === 1 ? "suggestion" : "suggestions"}
         </div>
-        <div
-          className="button"
+        <img
+          alt="feeling lucky"
+          src={lucky}
+          height="100"
+          width="100"
           onClick={() => {
             setFade(true);
             setRandomVisible(true);
-            getRandomOption();
           }}
-        >
-          feeling lucky?
-        </div>
-        {randomVisible && (
+          style={{
+            background: "#fff",
+            borderRadius: "100px",
+            cursor: "pointer",
+            margin: "10px",
+          }}
+        ></img>
+        {(randomVisible || filteredOptions.length === 0) && (
           <div
             className={fade ? "randomContainer fade" : "randomContainer"}
             onAnimationEnd={() => setFade(false)}
           >
             <h1>
               {filteredOptions.length === 0
-                ? "Too complicated! We were forced to choose for you. YOU MUST GO HERE >>"
+                ? "Too complicated! Well, we were forced to choose for you. YOU MUST GO HERE >>"
+                : filteredOptions.length === 1
+                ? "We have ONLY ONE option. HERE YOU GO >>"
                 : "Feeling lucky"}
             </h1>
-            <Card className="random" option={getRandomOption()} />
+            <Card
+              className="random"
+              option={
+                getRandomElementOf(filteredOptions) ||
+                getRandomElementOf(options.filter(outSpecificHoursAndDays))
+              }
+              onClose={() => setRandomVisible(false)}
+            />
           </div>
         )}
         {filteredOptions.map((option) => (
