@@ -100,6 +100,9 @@ const Food = () => {
     history.push(`#${stringiedObject}`);
   }, [history, stringiedObject]);
 
+  const [randomOption, setRandomOption] = React.useState(options[0]);
+  const [randomVisible, setRandomVisible] = React.useState(false);
+
   return (
     <div className="Food">
       <div className="flexContainer gap">
@@ -158,24 +161,31 @@ const Food = () => {
         <div className="suggestionCount">
           {filteredOptions.length}{" "}
           {filteredOptions.length === 1 ? "suggestion" : "suggestions"}
-          {filteredOptions.length === 0 && " - You made it too complicated!"}
         </div>
+        <div
+          className="button"
+          onClick={() => {
+            setRandomVisible(true);
+            setRandomOption(
+              getRandomElementOf(filteredOptions) || getRandomElementOf(options)
+            );
+          }}
+        >
+          feeling lucky?
+        </div>
+        {randomVisible && (
+          <div className="randomContainer">
+            <h1>
+              {filteredOptions.length === 0
+                ? "To complicated. We chose for you! You go here: "
+                : "Feeling lucky"}
+            </h1>
+            <Card className="random" option={randomOption} />
+          </div>
+        )}
         {filteredOptions.map((option) => (
           <Card key={option.name} option={option} />
         ))}
-        <div
-          className="randomContainer"
-          title="Feeling lukcy chooses for you. Like so: getRandomElementOf(filteredOptions) || getRandomElementOf(options)."
-        >
-          <h1>Feeling lucky</h1>
-          <Card
-            className="random"
-            option={
-              getRandomElementOf(filteredOptions) ||
-              getRandomElementOf(options.filter(outSpecificHoursAndDays))
-            }
-          />
-        </div>
         {!!hiddenOptionsCount && (
           <div className="flexContainer gap card">
             We dont't show {hiddenOptionsCount} places that are currently closed
