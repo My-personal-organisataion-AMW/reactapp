@@ -18,6 +18,7 @@ const movies = [
   { title: "Tron", description: "" },
   { title: "Waynes world", description: "" },
   { title: "Würgeengel", description: "sehr langsam" },
+{title: "Searching for Sugarman", descripton: "dont read about it. You want to see it without a spoiler. Recommended by Heiko."},
 ];
 
 export default movies;
