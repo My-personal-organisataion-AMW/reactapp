@@ -16,6 +16,7 @@ const movies = [
   { title: "Soylandgreen", description: "Muss noch in 2022 geguckt werden" },
   { title: "Spaceballs", description: "" },
   { title: "Tron", description: "" },
+{ title: "Feuerzangenbowle", description: "1944 German film, Weihnachtenfilm" },
   { title: "Waynes world", description: "" },
   { title: "Würgeengel", description: "sehr langsam" },
 {title: "Searching for Sugarman", descripton: "dont read about it. You want to see it without a spoiler. Recommended by Heiko."},
