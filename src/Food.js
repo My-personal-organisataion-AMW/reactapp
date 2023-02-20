@@ -131,6 +131,12 @@ const Food = () => {
       </div>
       <hr></hr>
       <div className="flexContainer gap">
+        <div className="suggestionCount">
+          {filteredOptions.length}{" "}
+          {filteredOptions.length === 1 ? "suggestion" : "suggestions"}
+        </div>
+      </div>
+      <div className="flexContainer gap">
         {existingTags.map((tag) => (
           <span
             className={
@@ -164,22 +170,15 @@ const Food = () => {
           {filteredOptions.length}{" "}
           {filteredOptions.length === 1 ? "suggestion" : "suggestions"}
         </div>
-        <img
-          alt="feeling lucky"
-          src={lucky}
-          height="100"
-          width="100"
+        <div
+          className="button"
           onClick={() => {
             setFade(true);
             setRandomVisible(true);
           }}
-          style={{
-            background: "#fff",
-            borderRadius: "100px",
-            cursor: "pointer",
-            margin: "10px",
-          }}
-        ></img>
+        >
+          feeling lucky
+        </div>
         {(randomVisible || filteredOptions.length === 0) && (
           <div
             className={fade ? "randomContainer fade" : "randomContainer"}

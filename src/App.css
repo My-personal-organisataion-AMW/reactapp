@@ -102,13 +102,8 @@ a:hover {
 }
 
 .suggestionCount {
-  background: #fff;
-  color: #000;
-  font-size: calc(20px + 2vmin);
   font-weight: bold;
   margin: 10px;
-  padding: 10px;
-  transform: rotate(-2deg);
 }
 
 .tag {
@@ -130,10 +125,6 @@ a:hover {
   .tag {
     font-size: 24px;
     border-radius: 100px;
-  }
-
-  .suggestionCount {
-    font-size: calc(24px + 2vmin);
   }
 }
 
