@@ -73,6 +73,21 @@ const options = [
     mapLink: `${startPoint}LCharlotte+1,+Charlottenstraße+1,+10969+Berlin/@52.5065598,13.390505,17z/data=!3m2!4b1!5s0x47a85191d67efc55:0x45cff7b5ae0f3c02!4m14!4m13!1m5!1m1!1s0x47a851d14a7c756f:0xc8695c302425726e!2m2!1d13.3923017!2d52.5078243!1m5!1m1!1s0x47a851d415b6771b:0xf18afe0a148141c7!2m2!1d13.3930857!2d52.5052963!3e2`,
   },
   {
+    name: "China City",
+    tags: [
+      "chinese",
+      "has-sitting-places",
+      "huge-portions",
+      "lifestyle",
+      "new-places",
+      "reachable-without-a-bike",
+      "we-have-time",
+    ],
+    hint: "best agree on dishes to be shared",
+    mapLink: `${startPoint}China+-+City,+Leipziger+Str.+46,+10117+Berlin/@52.509368,13.3926723,17z/data=!3m2!4b1!5s0x47a851d777cd8059:0x2a1b1285dcbe7e27!4m14!4m13!1m5!1m1!1s0x47a851d14a7c756f:0xc8695c302425726e!2m2!1d13.3923017!2d52.5078243!1m5!1m1!1s0x47a851d77784a4b9:0x23c249679cf4cbab!2m2!1d13.3975505!2d52.5105115!3e1`,
+    menuLink: "http://china-city.eu/our-menu/",
+  },
+  {
     name: "Chineese noodles",
     tags: [
       "we-have-time",
