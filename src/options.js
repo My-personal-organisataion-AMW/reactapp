@@ -285,6 +285,17 @@ const options = [
     menuLink: "https://mix-match-cafe.business.site/#gallery",
   },
   {
+    name: "NOUMì",
+    tags: [
+      "asian",
+      "has-sitting-places",
+      "new-places",
+      "reachable-without-a-bike",
+    ],
+    mapLink: `${startPoint}NOUMI+Mitte/@52.5137412,13.396076,18z/data=!4m6!3m5!1s0x47a85102542881b3:0x6bfd99925f0d32b5!8m2!3d52.5143007!4d13.397416!16s%2Fg%2F11htqygydm`,
+    menuLink: "https://noumi-noodles.com/mitte#menue",
+  },
+  {
     name: "Otito Vietnamese Food",
     tags: [
       "asian",
