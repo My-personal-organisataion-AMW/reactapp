@@ -216,7 +216,7 @@ const options = [
       "reachable-without-a-bike",
       "we-have-time",
     ],
-    mapLink: `${startPoint}Datscha+Kreuzberg,+Graefestra%C3%9Fe,+Berlin/@52.501039,13.3999211,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fcbc0045e91:0xe7fd7b7b24d05b31!2m2!1d13.4187578!2d52.4939387!3e2`,
+    mapLink: `${startPoint}Restaurant+Maximilians+Berlin,+Friedrichstraße+185-190,+10117+Berlin/@52.5105815,13.3956403,17z/data=!4m13!4m12!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d07038fccd:0xee7212867d17fced!2m2!1d13.3892688!2d52.5114055?entry=ttu`,
     menuLink: "https://www.maximilians-berlin.de/mittagstisch",
   },
   {
