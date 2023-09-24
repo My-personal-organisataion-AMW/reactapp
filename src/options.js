@@ -449,7 +449,7 @@ export const people = [
     mustTags: ["has-sitting-places"],
   },
   {
-    name: "Guenther",
+    name: "Günther",
   },
   {
     name: "Mahmoud",
