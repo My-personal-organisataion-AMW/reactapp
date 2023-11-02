@@ -415,6 +415,16 @@ const options = [
     mapLink: `${startPoint}VAPIANO+Berlin+Friedrichstraße,+Friedrichstraße+50-55,+10117+Berlin/@52.5082008,13.3920196,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d1108c4713:0xe457ba13e59e93b0!2m2!1d13.3903524!2d52.5087171!3e1`,
     menuLink: "https://www.vapiano.de/de/vegan/berlin-checkpoint-charlie",
   },
+  {
+    name: "Caramel Mittags-Lounge",
+    tags: [
+      "has-sitting-places",
+      "new-places",
+      "reachable-without-a-bike",
+    ],
+    mapLink: `${startPoint}Caramel,+Zimmerstraße,+Berlin/@52.5078437,13.3930289,18.59z/data=!3m1!5s0x47a851d6b7a15137:0xf17af2b347a48425!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d6b5da5de5:0x6d138a3c563602af!2m2!1d13.3931424!2d52.5076905!3e2`,
+    menuLink: "http://www.caramelberlin.de/pdf/menue_aktuell.pdf",
+  },
 ];
 
 export const people = [
