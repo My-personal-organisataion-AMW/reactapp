@@ -421,7 +421,6 @@ const options = [
       "has-sitting-places",
       "new-places",
       "reachable-without-a-bike",
-      "feeling-lucky",
     ],
     mapLink: `${startPoint}Caramel,+Zimmerstraße,+Berlin/@52.5078437,13.3930289,18.59z/data=!3m1!5s0x47a851d6b7a15137:0xf17af2b347a48425!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d6b5da5de5:0x6d138a3c563602af!2m2!1d13.3931424!2d52.5076905!3e2`,
     menuLink: "http://www.caramelberlin.de/pdf/menue_aktuell.pdf",
