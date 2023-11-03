@@ -128,6 +128,10 @@ const Food = () => {
         <div className="button" onClick={() => setSelectedPeople([])}>
           reset
         </div>
+          <a className="mail" href="mailto:agustin.alvarez@idealo.de">
+          If your name is not on the list and you want to change it, please
+          contact our customer service         and inform about your food preferences.
+          </a>
       </div>
       <hr></hr>
       <div className="flexContainer gap">
