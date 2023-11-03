@@ -351,15 +351,16 @@ const options = [
     ],
     mapLink: `${startPoint}Ristorante+Lungomare,+Krausenstra%C3%9Fe+11,+10117+Berlin/@52.5086225,13.3927909,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d0e065bb39:0x1dc1b25b157ced20!2m2!1d13.3918528!2d52.5093853!3e1`,
   },
-  {
-    name: "Spaetzle",
-    tags: ["huge-portions", "has-sitting-places", "reachable-without-a-bike"],
-    timeBasedFilter: {
-      // crowded
-      hours: { dontShowAfter: "11:45:00", showFrom: "13:30:00" },
-    },
-    mapLink: `${startPoint}Sp%C3%A4tzle+Club,+Seydelstra%C3%9Fe+2,+10117+Berlin/@52.5097351,13.3982039,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84e28071e9ed1:0x4b5143e7c4540230!2m2!1d13.4024409!2d52.510562!3e2`,
-  },
+  // temporarly closed
+  // {
+  //   name: "Spaetzle",
+  //   tags: ["huge-portions", "has-sitting-places", "reachable-without-a-bike"],
+  //   timeBasedFilter: {
+  //     // crowded
+  //     hours: { dontShowAfter: "11:45:00", showFrom: "13:30:00" },
+  //   },
+  //   mapLink: `${startPoint}Sp%C3%A4tzle+Club,+Seydelstra%C3%9Fe+2,+10117+Berlin/@52.5097351,13.3982039,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84e28071e9ed1:0x4b5143e7c4540230!2m2!1d13.4024409!2d52.510562!3e2`,
+  // },
   {
     name: "Taka Fish House | Kotti",
     tags: ["fish", "has-sitting-places", "we-have-time"],
@@ -429,41 +430,34 @@ const options = [
 
 export const people = [
   {
-    name: "Daniel",
-    noGoPlaces: ["Taka Fish House | Kotti"], // Daniel doesn't like fishes, they offer only fishes
-    noGoTags: ["asian"],
+    name: "Agustin",
+    noGoPlaces: ["Papa", "Choppaluna"],
   },
   {
     name: "Anna",
     noGoPlaces: ["Papa", "Choppaluna"],
   },
   {
-    name: "Agustin",
-    noGoPlaces: ["Papa", "Choppaluna"],
+    name: "Axel",
+    mustTags: ["has-sitting-places"],
   },
   {
-    name: "Robert",
-    mustTags: ["vegan-friendly", "reachable-without-a-bike"],
-    noGoPlaces: ["Spaetzle"],
+    name: "Daniel",
+    noGoPlaces: ["Taka Fish House | Kotti"], // Daniel doesn't like fishes, they offer only fishes
+    noGoTags: ["asian"],
   },
   {
     name: "Heiko",
     noGoPlaces: ["Yusuf - Falafel, Halloumi & Schawarma"],
   },
   {
-    name: "Axel",
-    mustTags: ["has-sitting-places"],
-  },
-  {
-    name: "Günther",
-  },
-  {
-    name: "Mahmoud",
-  },
-  {
     name: "Johannes",
-    noGoPlaces: ["Spaetzle"],
     noGoTags: ["burger"], // unless bun ist glutenfree
+  },
+  {
+    name: "Robert",
+    mustTags: ["vegan-friendly", "reachable-without-a-bike"],
+    noGoPlaces: ["Spaetzle"],
   },
 ];
 
