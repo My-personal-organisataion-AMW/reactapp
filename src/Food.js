@@ -5,7 +5,6 @@ import { parse, stringify } from "qs";
 import { createBrowserHistory } from "history";
 import { getRandomElementOf } from "./utils";
 import Card from "./Card";
-import lucky from "./lucky.png";
 
 const Food = () => {
   // from URL
