@@ -447,10 +447,6 @@ export const people = [
     noGoPlaces: ["Spaetzle"],
   },
   {
-    name: "Farida",
-    noGoPlaces: ["Maximilian"],
-  },
-  {
     name: "Heiko",
     noGoPlaces: ["Yusuf - Falafel, Halloumi & Schawarma"],
   },
