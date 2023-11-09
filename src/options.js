@@ -13,7 +13,7 @@ const options = [
     mapLink: `${startPoint}B%C3%A1nh+m%C3%AC+S%C3%A0i+G%C3%B2n+-+Vietnamesisches+Baguette,+Wallstra%C3%9Fe+21,+10179+Berlin/@52.5098702,13.4006765,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fdab4f26bff:0xfc584e2391ae9603!2m2!1d13.4075106!2d52.5114533!3e2`,
   },
   {
-    name: "Bocca Felice Ristorante",
+    name: "Bocca Felice Ristorante aka. dekadent italiano",
     tags: [
       "fish",
       "pasta",
