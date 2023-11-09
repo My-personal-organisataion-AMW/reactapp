@@ -13,6 +13,21 @@ const options = [
     mapLink: `${startPoint}B%C3%A1nh+m%C3%AC+S%C3%A0i+G%C3%B2n+-+Vietnamesisches+Baguette,+Wallstra%C3%9Fe+21,+10179+Berlin/@52.5098702,13.4006765,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fdab4f26bff:0xfc584e2391ae9603!2m2!1d13.4075106!2d52.5114533!3e2`,
   },
   {
+    name: "Bocca Felice Ristorante aka. dekadent italiano",
+    tags: [
+      "fish",
+      "pasta",
+      "pizza",
+      "has-sitting-places",
+      "reachable-without-a-bike",
+      "salad",
+      "soup",
+      "we-have-time"
+    ],
+    mapLink: `${startPoint}Ristorante+Bocca+Felice+-+Berlin,+Seydelstraße,+Berlin/@52.50875,13.3991159,17z/data=!3m2!4b1!5s0x47a851d61735679f:0xaa952d99618414ab!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fa0466cf447:0x243749f6e2811123!2m2!1d13.4046558!2d52.5087039!3e2?entry=ttu`,
+    menuLink: "https://www.bocca-felice.de/menu"
+  },
+  {
     name: "Blumen laden viet",
     tags: [
       "asian",
@@ -68,11 +83,7 @@ const options = [
   },
   {
     name: "Caramel Mittags-Lounge",
-    tags: [
-      "has-sitting-places",
-      "new-places",
-      "reachable-without-a-bike",
-    ],
+    tags: ["has-sitting-places", "new-places", "reachable-without-a-bike"],
     mapLink: `${startPoint}Caramel,+Zimmerstraße,+Berlin/@52.5078437,13.3930289,18.59z/data=!3m1!5s0x47a851d6b7a15137:0xf17af2b347a48425!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d6b5da5de5:0x6d138a3c563602af!2m2!1d13.3931424!2d52.5076905!3e2`,
     menuLink: "http://www.caramelberlin.de/pdf/menue_aktuell.pdf",
   },
@@ -89,7 +100,6 @@ const options = [
       "has-sitting-places",
       "huge-portions",
       "lifestyle",
-      "new-places",
       "reachable-without-a-bike",
       "we-have-time",
     ],
@@ -296,12 +306,7 @@ const options = [
   },
   {
     name: "NOUMì",
-    tags: [
-      "asian",
-      "has-sitting-places",
-      "new-places",
-      "reachable-without-a-bike",
-    ],
+    tags: ["asian", "has-sitting-places", "pasta", "reachable-without-a-bike"],
     mapLink: `${startPoint}NOUMI+Mitte/@52.5137412,13.396076,18z/data=!4m6!3m5!1s0x47a85102542881b3:0x6bfd99925f0d32b5!8m2!3d52.5143007!4d13.397416!16s%2Fg%2F11htqygydm`,
     menuLink: "https://noumi-noodles.com/mitte#menue",
   },
@@ -346,10 +351,12 @@ const options = [
       "bier",
       "has-sitting-places",
       "new-places",
+      "pasta",
       "pizza",
       "reachable-without-a-bike",
     ],
     mapLink: `${startPoint}Ristorante+Lungomare,+Krausenstra%C3%9Fe+11,+10117+Berlin/@52.5086225,13.3927909,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d0e065bb39:0x1dc1b25b157ced20!2m2!1d13.3918528!2d52.5093853!3e1`,
+    menuLink: "https://www.lungomare.de/img/menue1.pdf",
   },
   // temporarly closed
   // {
@@ -425,7 +432,7 @@ const options = [
     ],
     mapLink: `${startPoint}VAPIANO+Berlin+Friedrichstraße,+Friedrichstraße+50-55,+10117+Berlin/@52.5082008,13.3920196,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a851d1108c4713:0xe457ba13e59e93b0!2m2!1d13.3903524!2d52.5087171!3e1`,
     menuLink: "https://www.vapiano.de/de/vegan/berlin-checkpoint-charlie",
-  }
+  },
 ];
 
 export const people = [
