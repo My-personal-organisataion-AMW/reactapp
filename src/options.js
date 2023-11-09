@@ -13,6 +13,21 @@ const options = [
     mapLink: `${startPoint}B%C3%A1nh+m%C3%AC+S%C3%A0i+G%C3%B2n+-+Vietnamesisches+Baguette,+Wallstra%C3%9Fe+21,+10179+Berlin/@52.5098702,13.4006765,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fdab4f26bff:0xfc584e2391ae9603!2m2!1d13.4075106!2d52.5114533!3e2`,
   },
   {
+    name: "Bocca Felice Ristorante",
+    tags: [
+      "fish",
+      "pasta",
+      "pizza",
+      "has-sitting-places",
+      "reachable-without-a-bike",
+      "salad",
+      "soup",
+      "we-have-time"
+    ],
+    mapLink: `${startPoint}Ristorante+Bocca+Felice+-+Berlin,+Seydelstraße,+Berlin/@52.50875,13.3991159,17z/data=!3m2!4b1!5s0x47a851d61735679f:0xaa952d99618414ab!4m14!4m13!1m5!1m1!1s0x47a85152c7a7f411:0xf454b46331cb7df7!2m2!1d13.3982198!2d52.5082933!1m5!1m1!1s0x47a84fa0466cf447:0x243749f6e2811123!2m2!1d13.4046558!2d52.5087039!3e2?entry=ttu`,
+    menuLink: "https://www.bocca-felice.de/menu"
+  },
+  {
     name: "Blumen laden viet",
     tags: [
       "asian",
