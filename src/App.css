@@ -161,3 +161,55 @@ a.mail {
   background-color: #000;
   color: #fff;
 }
+
+/* Spanish Table*/
+
+#spanish {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#spanish td,
+#spanish th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#spanish tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#spanish tr:hover {
+  background-color: #e00468;
+  color: #fff;
+}
+
+#spanish th {
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+}
+
+.explanation {
+  font-weight: bold;
+}
+
+.example {
+
+  background-color: #e2e2e2;
+  border-radius: 100px;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+.ex2 {
+  color: #117a37;
+}
+
+.ex1 {
+  color: #e00468;
+}
+
+.ending {
+  color: #e00468;
+}
