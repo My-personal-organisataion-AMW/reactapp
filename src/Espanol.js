@@ -64,8 +64,7 @@ const Espanol = () => {
           <tr>
             <td>
               <h4 class="explanation">
-                Zeitraum der gerade eben abgeschlossen ist - thumb rule: weniger
-                als 24h
+                Zeitraumangabe ist präzise
               </h4>
               <span class="example ex1">En 1992</span>
               <span class="example ex1">Anoche</span>
@@ -74,7 +73,7 @@ const Espanol = () => {
               <span class="example ex1">La semana pasada</span>
             </td>
             <td>
-              <h4 class="explanation">Zeitraum ist unwichitg</h4>
+              <h4 class="explanation">Zeitraum ist unwichitg/algemain</h4>
               <span class="example ex2">Nunca</span>
               <span class="example ex2">Siempre</span>
               <span class="example ex2">Muchas veces</span>
