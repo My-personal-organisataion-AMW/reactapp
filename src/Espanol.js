@@ -122,7 +122,7 @@ const Espanol = () => {
                     <td rowspan="6">
                       trabaj<span class="ending">ado</span>
                       <br></br>
-                      est<span class="ending">ado</span>
+                      est<span class="ending">ado</span> (Estado: war aber nicht mehr)
                       <br></br>
                       viv<span class="ending">ido</span>
                       <br></br>
@@ -130,7 +130,7 @@ const Espanol = () => {
                       <br></br>
                       <span class="ending">ido</span>
                       <br></br>
-                      s<span class="ending">ido</span>
+                      s<span class="ending">ido</span> (Sido: war und könnte noch sein)
                       <br></br>
                     </td>
                   </tr>
