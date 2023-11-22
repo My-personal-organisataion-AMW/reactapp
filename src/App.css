@@ -190,19 +190,22 @@ a.mail {
 }
 
 .example {
-
-  background-color: #e2e2e2;
   border-radius: 100px;
-  padding: 6px 10px;
+  padding: 8px 10px;
+  margin: 3px 2px;
   font-weight: bold;
+  line-height: 0.7;
+  display: inline-block;
 }
 
 .ex2 {
-  color: #117a37;
+  color: #2ed866;
+  background-color: #09ffa124;
 }
 
 .ex1 {
   color: #e00468;
+  background-color: #fe50b617;
 }
 
 .ending {
