@@ -45,7 +45,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:4000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
 Changed in `package.json` `"start": "PORT=4000 react-scripts start"`
 

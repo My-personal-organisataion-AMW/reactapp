@@ -189,9 +189,9 @@ const Food = () => {
           >
             <h1>
               {filteredOptions.length === 0
-                ? "Too complicated! Well, we were forced to choose for you. YOU MUST GO HERE >>"
+                ? "Too complicated! We don't have options you like. So we made a random choice (yes, based on options you do not like). Stop being complicated and GO HERE >>"
                 : filteredOptions.length === 1
-                ? "We have ONLY ONE option. HERE YOU GO >>"
+                ? "We have ONLY ONE option. Stop clicking and GO HERE >>"
                 : "Feeling lucky"}
             </h1>
             <Card
